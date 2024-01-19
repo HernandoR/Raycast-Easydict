@@ -47,7 +47,7 @@ import {
   QueryTypeResult,
   TranslationType,
 } from "../types";
-import { checkIsDictionaryType, checkIsTranslationType, showErrorToast } from "../utils";
+import { checkIsDictionaryType, checkIsTranslationType, showErrorToast } from "../utils/utils";
 import {
   checkIfEnableYoudaoDictionary,
   checkIfShowTranslationDetail,

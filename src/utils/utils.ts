@@ -12,11 +12,11 @@ import { Clipboard, getApplications, LocalStorage, showToast, Toast } from "@ray
 import { AxiosError } from "axios";
 import CryptoJS from "crypto-js";
 import { clipboardQueryTextKey } from "./consts";
-import { LanguageDetectType } from "./detectLanguage/types";
-import { LingueeListItemType } from "./dictionary/linguee/types";
-import { QueryWordInfo, YoudaoDictionaryListItemType } from "./dictionary/youdao/types";
-import { myPreferences } from "./preferences";
-import { Easydict } from "./releaseVersion/versionInfo";
+import { LanguageDetectType } from "../detectLanguage/types";
+import { LingueeListItemType } from "../dictionary/linguee/types";
+import { QueryWordInfo, YoudaoDictionaryListItemType } from "../dictionary/youdao/types";
+import { myPreferences } from "../preferences";
+import { Easydict } from "../releaseVersion/versionInfo";
 import {
   DictionaryType,
   ListDisplayItem,
@@ -25,7 +25,7 @@ import {
   RequestErrorInfo,
   RequestType,
   TranslationType,
-} from "./types";
+} from "../types";
 
 /**
  * Max length for word to query dictionary.

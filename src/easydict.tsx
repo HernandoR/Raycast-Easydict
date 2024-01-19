@@ -17,7 +17,7 @@ import { QueryWordInfo } from "./dictionary/youdao/types";
 import { LanguageItem } from "./language/type";
 import { myPreferences, preferredLanguage1 } from "./preferences";
 import { DisplaySection } from "./types";
-import { checkIfInstalledEudic, checkIfNeedShowReleasePrompt, trimTextLength } from "./utils";
+import { checkIfInstalledEudic, checkIfNeedShowReleasePrompt, trimTextLength } from "./utils/utils";
 
 const disableConsoleLog = false;
 

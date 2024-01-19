@@ -34,7 +34,7 @@ import {
   checkIsTranslationType,
   checkIsWord,
   checkIsYoudaoDictionaryListItem,
-} from "../utils";
+} from "../utils/utils";
 
 /**
  * Sort query results by designated order.

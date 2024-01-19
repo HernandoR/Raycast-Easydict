@@ -13,7 +13,7 @@ import axios from "axios";
 import EventEmitter from "events";
 import { HttpsProxyAgent } from "hpagent";
 import { getMacSystemProxy } from "mac-system-proxy";
-import { networkTimeout } from "./consts";
+import { networkTimeout } from "./utils/consts";
 
 EventEmitter.defaultMaxListeners = 15; // default is 10.
 

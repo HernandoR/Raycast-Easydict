@@ -16,7 +16,7 @@ import { QueryWordInfo } from "../../dictionary/youdao/types";
 import { chineseLanguageItem, englishLanguageItem } from "../../language/consts";
 import { getVolcanoLangCode, getYoudaoLangCodeFromVolcanoCode } from "../../language/languages";
 import { QueryTypeResult, RequestErrorInfo, TranslationType } from "../../types";
-import { getTypeErrorInfo } from "../../utils";
+import { getTypeErrorInfo } from "../../utils/utils";
 import { VolcanoDetectResult, VolcanoTranslateResult } from "./types";
 import { genVolcanoSign } from "./volcanoSign";
 

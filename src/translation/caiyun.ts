@@ -14,7 +14,7 @@ import { QueryWordInfo } from "../dictionary/youdao/types";
 import { getCaiyunLangCode } from "../language/languages";
 import { AppKeyStore } from "../preferences";
 import { CaiyunTranslateResult, QueryTypeResult, TranslationType } from "../types";
-import { getTypeErrorInfo } from "../utils";
+import { getTypeErrorInfo } from "../utils/utils";
 
 /**
  * Caiyun translate API. Cost time: 0.2s

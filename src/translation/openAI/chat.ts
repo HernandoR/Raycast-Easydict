@@ -13,8 +13,8 @@ import { getProxyAgent } from "../../axiosConfig";
 import { QueryWordInfo } from "../../dictionary/youdao/types";
 import { AppKeyStore } from "../../preferences";
 import { QueryTypeResult, TranslationType } from "../../types";
-import { getTypeErrorInfo } from "../../utils";
-import { networkTimeout } from "./../../consts";
+import { getTypeErrorInfo } from "../../utils/utils";
+import { networkTimeout } from "../../utils/consts";
 import { fetchSSE } from "./utils";
 
 const controller = new AbortController();

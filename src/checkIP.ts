@@ -1,17 +1,19 @@
 /*
  * @author: tisfeng
  * @createTime: 2022-09-17 22:22
- * @lastEditor: tisfeng
- * @lastEditTime: 2022-09-27 23:25
+ * @lastEditor: Liu Zhen
+ * @lastEditTime: 2024-01-19
  * @fileName: checkIP.ts
  *
  * Copyright (c) 2022 by tisfeng, All Rights Reserved.
  */
 
+
+
 import { LocalStorage } from "@raycast/api";
 import axios from "axios";
 import { requestCostTime } from "./axiosConfig";
-import { isChineseIPKey } from "./consts";
+import { isChineseIPKey } from "./utils/consts";
 import { myDecrypt } from "./preferences";
 
 /**
@@ -40,11 +42,11 @@ export function checkIfIpInChina(): Promise<boolean> {
 
 /**
  * Get current ip info.
- * 
+ *
  * Ref: https://ipinfo.io/developers
- * 
+ *
  * * Note: Free usage of our API is limited to 50,000 API requests per month. If you exceed that limit, we'll return a 429 HTTP status code to you.
- * 
+ *
  * curl https://ipinfo.io
   {
     "ip": "120.240.53.42",

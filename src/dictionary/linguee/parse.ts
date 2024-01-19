@@ -11,7 +11,7 @@
 import { parse } from "node-html-parser";
 import { getLanguageEnglishName, getLanguageItemFromDeepLSourceCode } from "../../language/languages";
 import { DictionaryType, DisplaySection, ListDisplayItem, QueryTypeResult } from "../../types";
-import { checkIsWord } from "../../utils";
+import { checkIsWord } from "../../utils/utils";
 import { QueryWordInfo } from "../youdao/types";
 import { getValidLingueeLanguagePair } from "./languages";
 import {

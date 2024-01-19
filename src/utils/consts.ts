@@ -1,9 +1,9 @@
 /*
- * @author: tisfeng
- * @createTime: 2022-06-24 22:36
- * @lastEditor: tisfeng
- * @lastEditTime: 2023-03-20 09:29
- * @fileName: consts.ts
+ * @Author: tisfeng
+ * @CreateDate: 2022-06-24 22:36
+ * @LastEditors: HernandoR lzhen.dev@outlook.com
+ * @LastEditTime: 2024-01-19
+ * @Description: consts.ts
  *
  * Copyright (c) 2022 by tisfeng, All Rights Reserved.
  */

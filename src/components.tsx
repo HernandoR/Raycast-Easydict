@@ -37,7 +37,7 @@ import {
   TranslationType,
   WebQueryItem,
 } from "./types";
-import { checkIsLingueeListItem, checkIsTranslationType, checkIsYoudaoDictionaryListItem } from "./utils";
+import { checkIsLingueeListItem, checkIsTranslationType, checkIsYoudaoDictionaryListItem } from "./utils/utils";
 
 const queryWebItemTypes = [
   DictionaryType.Youdao,

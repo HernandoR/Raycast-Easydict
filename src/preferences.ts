@@ -16,7 +16,7 @@ export const myPreferences: MyPreferences = getPreferenceValues();
 export const preferredLanguage1 = getLanguageItemFromYoudaoCode(myPreferences.language1);
 export const preferredLanguage2 = getLanguageItemFromYoudaoCode(myPreferences.language2);
 export const preferredLanguages = [preferredLanguage1, preferredLanguage2];
-import { DeepLAuthKey, EncryptedCaiyunToken } from "./secrets";
+import { DeepLAuthKey, EncryptedCaiyunToken } from "./utils/secrets";
 
 // console.log("myPreferences: ", myPreferences);
 

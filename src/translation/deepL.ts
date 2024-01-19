@@ -16,7 +16,7 @@ import { QueryWordInfo } from "../dictionary/youdao/types";
 import { getDeepLLangCode } from "../language/languages";
 import { AppKeyStore, myDecrypt, myEncrypt } from "../preferences";
 import { DeepLTranslateResult, QueryTypeResult, TranslationType } from "../types";
-import { getTypeErrorInfo } from "../utils";
+import { getTypeErrorInfo } from "../utils/utils";
 
 const deepLAuthStoredKey = "deepLAuthStoredKey";
 

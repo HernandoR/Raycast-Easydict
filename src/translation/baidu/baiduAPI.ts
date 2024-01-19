@@ -23,7 +23,7 @@ import {
   RequestErrorInfo,
   TranslationType,
 } from "../../types";
-import { getTypeErrorInfo, md5 } from "../../utils";
+import { getTypeErrorInfo, md5 } from "../../utils/utils";
 
 import genBaiduWebSign from "./baiduSign";
 

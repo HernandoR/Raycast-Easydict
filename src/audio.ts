@@ -17,7 +17,7 @@ import fs from "fs";
 import path from "path";
 import playerImport from "play-sound";
 import { languageItemList } from "./language/consts";
-import { printObject, trimTextLength } from "./utils";
+import { printObject, trimTextLength } from "./utils/utils";
 
 console.log(`enter audio.ts`);
 
