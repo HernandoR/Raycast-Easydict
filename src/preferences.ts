@@ -16,6 +16,8 @@ export const myPreferences: MyPreferences = getPreferenceValues();
 export const preferredLanguage1 = getLanguageItemFromYoudaoCode(myPreferences.language1);
 export const preferredLanguage2 = getLanguageItemFromYoudaoCode(myPreferences.language2);
 export const preferredLanguages = [preferredLanguage1, preferredLanguage2];
+import { DeepLAuthKey, EncryptedCaiyunToken } from "./secrets";
+
 // console.log("myPreferences: ", myPreferences);
 
 export interface MyPreferences {
@@ -73,12 +75,11 @@ export interface MyPreferences {
  * * NOTE: Please apply for your own keys as much as possible. Please do not abuse them, otherwise I have to revoke them 😑。
  */
 export class AppKeyStore {
-  static defaultEncryptedDeepLAuthKey =
-    "U2FsdGVkX190UMu/gorJ/qgwhayFJilCPE5kSfOutkELsUnylfAZEtJGVPin3njGRwC2odphwTigbCzEcJ4kAw==";
+  static defaultEncryptedDeepLAuthKey = DeepLAuthKey;
   private static defaultDeepLAuthKey = myDecrypt(this.defaultEncryptedDeepLAuthKey);
 
   // This is a official test token from https://open.caiyunapp.com/%E4%BA%94%E5%88%86%E9%92%9F%E5%AD%A6%E4%BC%9A%E5%BD%A9%E4%BA%91%E5%B0%8F%E8%AF%91_API
-  private static defaultEncryptedCaiyunToken = "U2FsdGVkX1+RTgfMmgZgkD1Phn4FyvzMiMed5BvxnjoqS8QIJ/AFjUJdfC7OqjU3";
+  private static defaultEncryptedCaiyunToken = EncryptedCaiyunToken;
   private static defaultCaiyunToken = myDecrypt(this.defaultEncryptedCaiyunToken);
 
   // youdao app id and appsecret

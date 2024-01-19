@@ -58,6 +58,7 @@
     "axios": "^1.6.0",
     "cheerio": "^1.0.0-rc.12",
     "crypto-js": "^4.2.0",
+    "dotenv": "^16.3.1",
     "eventsource": "^2.0.2",
     "eventsource-parser": "^0.1.0",
     "execa": "^7.1.0",
@@ -70,7 +71,8 @@
     "play-sound": "^1.1.6",
     "qs": "^6.11.0",
     "run-applescript": "^6.1.0",
-    "tencentcloud-sdk-nodejs-tmt": "^4.0.559"
+    "tencentcloud-sdk-nodejs-tmt": "^4.0.559",
+    "winston": "^3.11.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
