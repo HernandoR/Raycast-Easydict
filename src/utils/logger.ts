@@ -1,3 +1,12 @@
+/*
+ * @Author: HernandoR lzhen.dev@outlook.com
+ * @CreateDate: Do not edit
+ * @LastEditors: HernandoR lzhen.dev@outlook.com
+ * @LastEditTime: 2024-01-20
+ * @Description: default logger for the
+ * 
+ * Copyright (c) 2024by HernandoR lzhen.dev@outlook.com, All Rights Reserved. 
+ */
 import winston from "winston";
 
 const options: winston.LoggerOptions = {

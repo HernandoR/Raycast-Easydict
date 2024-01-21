@@ -143,6 +143,7 @@ export class DataManager {
    */
   public queryTextWithTextInfo(queryWordInfo: QueryWordInfo) {
     this.queryWordInfo = queryWordInfo;
+    // TODO:why need word info to check if Youdao is available
     this.enableYoudaoDictionary = checkIfEnableYoudaoDictionary(this.queryWordInfo);
 
     this.resetProperties();
@@ -419,21 +420,21 @@ export class DataManager {
    * Query DeepL translate. If has enabled Linguee dictionary, don't need to query DeepL.
    */
   private queryDeepLTranslate(queryWordInfo: QueryWordInfo) {
+    if (!myPreferences.enableDeepLTranslate) {
+      return;
+    }
     const type = TranslationType.DeepL;
     this.addQueryToRecordList(type);
 
     requestDeepLTranslate(queryWordInfo)
       .then((deepLTypeResult) => {
         const queryResult: QueryResult = {
-          type: type,
-          sourceResult: deepLTypeResult,
+        type: type,
+        sourceResult: deepLTypeResult,
         };
         this.updateTranslationDisplay(queryResult);
       })
       .catch((error) => {
-        if (!myPreferences.enableDeepLTranslate) {
-          return;
-        }
         showErrorToast(error);
       })
       .finally(() => {
@@ -857,6 +858,7 @@ export class DataManager {
    */
   private updateTranslationDisplay(queryResult: QueryResult) {
     const { type, sourceResult } = queryResult;
+  // private updateTranslationDisplay( type:QueryType, sourceResult:QueryTypeResult){
     console.log(`---> updateTranslationDisplay: ${type}`);
     if (!sourceResult.result) {
       console.warn(`---> ${type} result is empty.`);
@@ -895,7 +897,9 @@ export class DataManager {
         },
       ];
       const newQueryResult: QueryResult = {
-        ...queryResult,
+        // ...queryResult,
+        type,
+        sourceResult,
         displaySections: displaySections,
       };
 
